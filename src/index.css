@@ -1,0 +1,341 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500");
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+html{
+	background-color: rgb(26, 26, 26);
+}
+
+html,
+body,
+#root {
+   min-height: 100%;
+   min-width: 100%;
+   font-family: "Press Start 2P";
+   display: flex;
+}
+
+#root {
+   background-color: rgb(26, 26, 26);
+}
+
+#main {
+   text-align: center;
+   margin: auto;
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+
+#topbar{
+	color:rgb(201, 201, 201);
+	font-size:1.2em;
+}
+
+#botbar{
+	color:rgb(201, 201, 201);
+	font-size:1.2em;
+}
+
+#screen{
+	position:relative;
+   text-align: center;
+	margin: auto;
+	width: auto;
+	height: auto;
+}
+
+.row {
+   display: flex;
+}
+
+.pixel {
+   width: 24px;
+   height: 24px;
+   background-color: whitesmoke;
+   border: 0px solid gray;
+   display: block;
+}
+
+.circle{
+   background-color: rgb(0, 255, 34);
+}
+
+.player::after {
+   content: "@";
+   font-size: 1.6em;
+	position:relative;
+	top:-10%;
+	left:7%;
+	color:white;
+	margin:auto;
+}
+
+.player {
+   background-color: rgb(94, 29, 56);
+}   
+
+.rat::after {
+   content: "r";
+   font-size: 1.5em;
+   position:relative;
+   top:-15%;
+   color:rgb(173, 173, 173);
+}
+.rat {
+   background-color: rgb(65, 65, 65);
+} 
+
+.kobold::after {
+   content: "k";
+   font-size: 1.4em;
+   position:relative;
+   top:-6%;
+   color:rgb(71, 166, 204);
+}
+.kobold {
+   background-color: rgb(49, 83, 92);
+} 
+
+.goblin::after {
+   content: "g";
+   font-size: 1.5em;
+	position:relative;
+	left:3%;
+   top:-16%;
+   color:rgb(54, 233, 108);
+}
+.goblin {
+   background-color: rgb(50, 97, 62);
+} 
+
+.ogre::after {
+   content: "O";
+   font-size: 1.5em;
+   position:relative;
+	top:-8%;
+	left:6%;
+   color:rgb(240, 86, 86);
+}
+.ogre {
+   background-color: rgb(70, 21, 21);
+} 
+
+.dragon::after {
+   content: "D";
+   font-size: 1.6em;
+   position:relative;
+	top:-10%;
+	left:6%;
+   color:rgb(103, 162, 252);
+}
+.dragon {
+   background-color: rgb(52, 22, 92);
+} 
+
+.wallThrone {
+	outline: 0px solid rgb(89, 123, 197);
+	background-color: rgb(26, 10, 17);
+}
+
+.wallArchives {
+	outline: 0px solid rgb(89, 123, 197);
+	background-color: rgb(53, 71, 109);
+}
+
+.wallCastle {
+	outline: 0px solid rgb(219, 200, 115);
+	background-color: rgb(188, 212, 134);
+}
+
+.wallDung {
+		outline: 0px solid rgb(68, 68, 68);
+		background-color: rgb(82, 82, 82);
+	}
+
+.wallCave {
+
+   outline: 0px solid rgb(125, 141, 177);
+   background-color: rgb(129, 92, 81);
+}
+
+.wallForest {
+   outline: 0px solid rgb(139, 139, 139);
+   background-color: rgb(33, 48, 42);
+}
+
+.wallForest::after {
+	content:"ψ";
+	font-size: 1.5em;
+	position:relative;
+	top:-11%;
+   outline: 0px solid rgb(139, 139, 139);
+   color: rgb(40, 65, 58);
+}
+
+.wall {
+   outline: 0px solid rgb(139, 139, 139);
+   background-color: rgb(129, 92, 81);
+}
+
+.wallx {
+   background-color: rgb(236, 236, 236);
+   box-shadow: inset 0 -8px 0 rgb(177, 177, 177);
+}
+
+.wally {
+   background-color: rgb(236, 236, 236);
+   box-shadow: inset 0 -8px 0 rgb(177, 177, 177);
+}
+
+.pillar {
+   background-color: rgb(126, 161, 207);
+   border-radius: 5px;
+}
+
+.room {
+   outline: 0px solid rgb(90, 49, 49);
+   background-color: rgb(94, 57, 57);
+}
+
+.roomForest {
+   outline: 0px solid rgb(32, 82, 79);
+   background-color: rgb(28, 58, 48);
+}
+
+.roomCave {
+   outline: 0px solid rgb(34, 83, 92);
+   background-color: rgb(94, 57, 57);
+}
+
+.roomDung {
+   outline: 0px solid rgb(90, 49, 49);
+   background-color: rgb(63, 63, 63);
+}
+
+.roomCastle {
+   outline: 0px solid rgb(90, 49, 49);
+   background-color: rgb(114, 57, 84);
+}
+
+.roomArchives {
+   outline: 0px solid rgb(90, 49, 49);
+   background-color: rgb(41, 114, 148);
+}
+
+.roomThrone {
+   outline: 0px solid rgb(90, 49, 49);
+   background-color: rgb(100, 47, 67);
+}
+
+.room::after{
+   content: "";
+   font-size: 2em;
+   position:relative;
+   top:-50%;
+   color:rgb(31, 104, 49);
+}
+
+.path {
+   background-color: rgb(109, 173, 192);
+}
+
+.entrance {
+   box-shadow: 
+      inset 0 -2px 0px rgb(39, 39, 39),
+      inset 0 -6px 0px rgb(90, 90, 90),
+      inset 0 -9px 0px rgb(43, 43, 43),
+      inset 0 -13px 0px rgb(131, 131, 131),      
+      inset 0 -16px 0px rgb(56, 56, 56),  
+      inset 0 -24px 0px rgb(158, 158, 158),  
+
+      
+      inset 2px 0 5px rgb(66, 66, 66),
+      inset -2px 0 5px rgb(66, 66, 66);
+   border:0px solid rgb(235, 19, 19);
+   border-radius: 2px;
+   background-color: rgb(101, 98, 138);
+}
+
+.entrance::after{
+   content:"";
+   color:rgb(160, 160, 81);
+   font-size: 2.1em;
+   position:relative;
+   top:-50%;
+
+}
+
+.exit{
+   box-shadow: 
+		inset 0 6px 0px rgb(59, 59, 59), 
+		inset 0 7px 0px rgb(31, 31, 31), 
+		inset 0 14px 0px rgb(87, 87, 87), 
+		inset 0 15px 0px rgb(49, 49, 49), 
+		inset 0 27px 0px rgb(131, 131, 131), 
+		inset 2px 0 5px rgb(53, 53, 53),
+		inset -2px 0 5px rgb(145, 145, 145);
+	border:0px solid rgb(59, 150, 82);
+	border-radius: 2px;
+	background-color: rgb(101, 98, 138);
+}
+
+.exit::after{
+   content:"";
+   color:rgb(160, 160, 81);
+   font-size: 2.1em;
+   position:relative;
+   top:-50%;
+
+}
+
+.damage::after {
+   content: "%";
+   font-size: 1.8em;
+   position:relative;
+   top:-25%;
+   color:rgb(252, 182, 103);
+}
+.damage {
+   background-color: rgb(100, 74, 59);
+} 
+
+.health::after {
+   content: "+";
+   font-size: 1.5em;
+   position:relative;
+	top:-6%;
+   color:rgb(255, 255, 255);
+}
+.health {
+   background-color: rgb(155, 53, 53);
+} 
+.backpack::after {
+   content: "$";
+   font-size: 1.8em;
+   position:relative;
+   top:-25%;
+   color:rgb(174, 186, 202);
+}
+.backpack {
+   background-color: rgb(87, 83, 94);
+} 
+
+.empty {
+   outline: 2px solid rgb(59, 59, 59);
+   background-color: rgb(58, 58, 58);
+}
+
+.shadow {
+   outline: 0px solid rgb(30, 34, 37);
+	background-color: rgb(25, 33, 39);
+}
+
+.shadow::after {
+	color: rgb(38, 49, 56);
+}
+
+.fog{
+   box-shadow:inset 0 25px 0 rgba(22, 26, 37, 0.589);
+}
